@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="MEOカルテ｜横浜359店・口コミ1,300件超のデータ分析から生まれたGoogleマップ集客(MEO)診断サービス。無料診断で、あなたのお店の伸びしろをデータで見える化します。">
+<meta name="description" content="MEOカルテ｜飲食店のためのGoogleマップ集客(MEO)診断サービス。口コミ・評価・情報の見え方を実データで分析し、無料診断カルテでお店の伸びしろを見える化します。神奈川全域・オンラインで全国対応。">
 <!-- ===================================================================
   MEOカルテ 自社サイト
   下の【CONFIG】の値を差し替えるだけで代表者名・連絡先が反映されます。
@@ -79,6 +79,12 @@
   @media(max-width:420px){.stats .num{font-size:1.45rem}}
   .stats .num small{font-size:.95rem;font-weight:700}
   .stats .lbl{font-size:.78rem;color:var(--sub);margin-top:2px}
+  @media(max-width:560px){
+    .stats{grid-template-columns:1fr}
+    .stats div{display:flex;align-items:baseline;justify-content:space-between;gap:12px;text-align:left;padding:16px 20px}
+    .stats .num{font-size:1.3rem}
+    .stats .lbl{margin-top:0}
+  }
 
   /* 課題提起 */
   .problem{background:var(--navy);color:#fff}
@@ -189,7 +195,7 @@
   <div class="inner nav">
     <a class="logo" href="#top"><span class="mark"><span>カ</span></span>MEOカルテ</a>
     <nav class="navlinks">
-      <a href="#problem">データで見る現状</a>
+      <a href="#problem">星が伸びない理由</a>
       <a href="#flow">サービスの流れ</a>
       <a href="#sample">診断サンプル</a>
       <a href="#pricing">料金</a>
@@ -203,37 +209,37 @@
   <div class="inner">
     <span class="kicker">Google Maps Data Consulting</span>
     <h1 class="serif">その星の数には、<br>理由がある。</h1>
-    <p class="sub">MEOカルテは、横浜359店舗・口コミ1,300件超の実データ分析から生まれた、Googleマップ集客の診断サービスです。感覚ではなくデータで、あなたのお店の「評価が伸びない理由」と「伸びしろ」を見える化します。</p>
+    <p class="sub">MEOカルテは、飲食店のためのGoogleマップ集客診断サービスです。口コミ・評価・情報の見え方を実データとAIで分析し、あなたのお店の「評価が伸びない理由」と「伸びしろ」を見える化。感覚ではなくデータで改善します。</p>
     <a class="cta-l" href="#contact">無料診断を受けてみる</a>
     <div class="cta-note">診断は完全無料・営業訪問なし。カルテ1枚のお渡しから始まります。</div>
     <div class="stats">
-      <div><div class="num en">359<small>店</small></div><div class="lbl">横浜市内の分析店舗数</div></div>
-      <div><div class="num en">1,316<small>件</small></div><div class="lbl">AI分析した口コミ数</div></div>
-      <div><div class="num en">7<small>項目</small></div><div class="lbl">話題別の口コミ診断軸</div></div>
+      <div><div class="num en">¥0</div><div class="lbl">診断カルテ・ミニHP制作</div></div>
+      <div><div class="num en">縛りなし</div><div class="lbl">契約期間・違約金なし</div></div>
+      <div><div class="num en">全国OK</div><div class="lbl">神奈川全域＋オンライン対応</div></div>
     </div>
   </div>
 </section>
 
 <section class="problem" id="problem">
   <div class="inner">
-    <span class="kicker">Data Insights</span>
-    <h2>横浜359店を分析してわかった、<br>「もったいない」の正体。</h2>
-    <p class="lead">Googleマップの評価は、味だけでは決まりません。実データが示すのは、多くのお店が「運用」で星を落としているという事実です。</p>
+    <span class="kicker">Common Pitfalls</span>
+    <h2>「味は良いのに、星が伸びない」。<br>その原因は、運用にあります。</h2>
+    <p class="lead">Googleマップの評価は、味だけでは決まりません。実データを分析すると、多くのお店が同じところで星を落としています。心当たりはありませんか。</p>
     <div class="p-grid">
       <div class="p-card">
-        <div class="big"><em>75%</em></div>
-        <div class="cap">口コミに一度も返信していないお店の割合。評価を左右する接点が、放置されています。</div>
+        <div class="big"><em>返信ゼロ</em></div>
+        <div class="cap">口コミは届いているのに、一度も返信していない。低評価の声が放置されたまま、次のお客様の「第一印象」になっています。</div>
       </div>
       <div class="p-card">
-        <div class="big">3.2%<span style="font-size:1.1rem;color:#8798ad"> vs </span><em>10.8%</em></div>
-        <div class="cap">接客への不満が出る口コミの割合（高評価店 vs 低評価店）。差がつくのは味ではなく、接客・待ち時間・清潔感でした。</div>
+        <div class="big"><em>情報が古い</em></div>
+        <div class="cap">営業時間・定休日・メニューが実際と違うまま。せっかく見つけてもらえても、来店前の小さな不安が足を遠ざけます。</div>
       </div>
       <div class="p-card">
-        <div class="big"><em>+0.19</em></div>
-        <div class="cap">GoogleマップにSNS導線があるお店は、平均評価がこれだけ高い傾向。情報発信の「見え方」も星に効きます。</div>
+        <div class="big"><em>導線がない</em></div>
+        <div class="cap">ホームページやSNSへのリンクがなく、お店の様子を確かめる手段がない。近隣の「ちゃんと見えるお店」との比較で不利になります。</div>
       </div>
     </div>
-    <p class="p-note">※ 2026年7月時点・当社調べ（横浜市内ラーメン店359店／Google Places APIデータおよび口コミ1,316件のAI分析）。相関に基づく傾向であり、効果を保証するものではありません。</p>
+    <p class="p-note">※ 当社によるGoogleマップ実データの分析（Google Places APIデータ・口コミのAI解析）から見えてきた、評価を落としやすい典型パターンです。</p>
   </div>
 </section>
 
@@ -268,12 +274,12 @@
   <div class="inner">
     <span class="kicker">Sample Karte</span>
     <h2>診断カルテのサンプル</h2>
-    <p class="lead">実際の無料診断でお渡しするカルテのイメージです（横浜市内の実在店舗を匿名化したデータ）。</p>
+    <p class="lead">実際の無料診断でお渡しするカルテのイメージです（数値はサンプルです）。</p>
 
     <div class="sample-card">
       <div class="sample-head">
         <div>
-          <div class="name">横浜市内・二郎系 A店</div>
+          <div class="name">飲食店 A店（サンプル）</div>
           <div class="meta">Google ★3.6 ・ 口コミ 993件 ・ オーナー返信なし</div>
         </div>
         <span class="badge-b">無料診断カルテ</span>
@@ -382,7 +388,7 @@
     </details>
     <details>
       <summary>飲食店以外でも診断できますか？</summary>
-      <div class="a">可能です。現在は横浜エリアの飲食店データが最も充実していますが、Googleマップに載っているビジネスであれば同じ手法で診断できます。まずはご相談ください。</div>
+      <div class="a">可能です。最も知見があるのは飲食店ですが、Googleマップに載っているビジネスであれば同じ手法で診断できます。まずはご相談ください。</div>
     </details>
   </div>
 </section>
@@ -400,7 +406,7 @@
         <tr><td>代表者</td><td id="repName">【準備中】</td></tr>
         <tr><td>電話</td><td id="repTel">【準備中】</td></tr>
         <tr><td>メール</td><td id="repMail">【準備中】</td></tr>
-        <tr><td>対応エリア</td><td>横浜市・神奈川県全域（オンライン対応で全国可）</td></tr>
+        <tr><td>対応エリア</td><td>神奈川県全域（オンライン対応で全国可）</td></tr>
         <tr><td>事業内容</td><td>Googleマップ集客（MEO）の診断・改善支援、口コミデータ分析、ホームページ制作</td></tr>
       </table>
     </div>
@@ -432,7 +438,7 @@ const CONFIG = {
     document.getElementById('repMail').innerHTML = '<a href="mailto:'+c.email+'" style="color:#ffd9b3">'+c.email+'</a>';
     document.getElementById('mailBtn').href =
       'mailto:'+c.email+'?subject='+encodeURIComponent('【無料診断希望】MEOカルテ')+
-      '&body='+encodeURIComponent('お名前：\n店名：\nお店のエリア（例：横浜市中区）：\nGoogleマップの店名（正式名称）：\n');
+      '&body='+encodeURIComponent('お名前：\n店名：\nお店のエリア（例：神奈川県藤沢市）：\nGoogleマップの店名（正式名称）：\n');
   }else{
     document.getElementById('mailBtn').addEventListener('click',function(e){
       e.preventDefault();
