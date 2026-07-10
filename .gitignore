@@ -111,3 +111,6 @@ temp/
 # Manus version file (auto-generated, not part of source)
 client/public/__manus__/version.json
 .project-config.json
+
+# 社内向けの運用メモ（公開リポジトリなので出さない）
+docs/

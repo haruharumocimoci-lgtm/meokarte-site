@@ -4,7 +4,7 @@ export default function Footer() {
     { label: "サービス名", value: "HPミセガオ" },
     { label: "代表者", value: "持丸 春聡" },
     { label: "電話", value: "【準備中】" },
-    { label: "メール", value: "haruharumocimoci@gmail.com" },
+    { label: "メール", value: "info@misegao.com" },
     { label: "対応エリア", value: "神奈川県全域（オンライン対応で全国可）" },
     {
       label: "事業内容",
