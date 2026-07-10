@@ -16,6 +16,7 @@ export default function Pricing() {
         "スマホ特化デザイン",
         "地図・電話・口コミ投稿への導線設計",
         "サーバー・公開費用込み",
+        "お店専用URL（例：yourshop.misegao.com）",
         "内容の変更・更新 月4回まで",
         "いつでも解約OK・違約金なし",
       ],
@@ -153,6 +154,44 @@ export default function Pricing() {
               </a>
             </div>
           ))}
+        </div>
+
+        {/* Domain option */}
+        <div
+          className={`mt-5 lg:mt-6 paper-card rounded-sm p-7 lg:p-9 flex flex-col sm:flex-row sm:items-center gap-7 ${
+            isInView ? "animate-fade-in-up" : "opacity-0"
+          }`}
+          style={{ animationDelay: "400ms" }}
+        >
+          <div className="flex-1 relative z-10">
+            <div className="mb-4">
+              <span className="text-[0.6rem] tracking-[0.2em] uppercase text-[oklch(0.50_0.03_240)] font-medium">
+                ADD-ON
+              </span>
+            </div>
+            <h3 className="font-bold text-xl text-sumi mb-2.5">独自ドメイン</h3>
+            <p className="text-sm text-[oklch(0.50_0.03_240)] leading-relaxed">
+              「yourshop.com」のような、お店だけのドメインで公開します。名刺やチラシにも載せやすく、お店の信頼感が増します。
+            </p>
+          </div>
+
+          <div className="shrink-0 sm:text-right relative z-10">
+            <div>
+              <span className="font-display font-bold text-2xl lg:text-[1.75rem] text-sumi">
+                ¥5,000
+              </span>
+              <span className="text-sm text-[oklch(0.50_0.03_240)] ml-1">（初期・税込）</span>
+            </div>
+            <p className="text-xs text-[oklch(0.50_0.03_240)] mt-1.5 mb-5">
+              1年目のドメイン代込み・2年目以降 年¥3,500（税込）
+            </p>
+            <a
+              href="#contact"
+              className="block text-center py-3 px-8 rounded-sm font-medium text-sm transition-all duration-200 border border-[oklch(0.18_0.02_280/0.2)] text-sumi hover:bg-[oklch(0.18_0.02_280)] hover:text-white hover:border-[oklch(0.18_0.02_280)] active:scale-[0.97]"
+            >
+              相談してみる
+            </a>
+          </div>
         </div>
 
         {/* Note */}
