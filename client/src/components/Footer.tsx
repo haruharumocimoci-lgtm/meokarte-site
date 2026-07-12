@@ -1,4 +1,5 @@
 import brandLogo from "@/assets/brand-logo_295a132b.png";
+import { Link } from "wouter";
 export default function Footer() {
   const businessInfo = [
     { label: "サービス名", value: "HPミセガオ" },
@@ -59,9 +60,17 @@ export default function Footer() {
               HPミセガオ
             </span>
           </div>
-          <p className="text-xs text-[oklch(0.35_0.02_240)]">
-            &copy; 2025 HPミセガオ. All rights reserved.
-          </p>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
+            <Link
+              href="/tokushoho"
+              className="text-xs text-[oklch(0.45_0.02_240)] hover:text-[oklch(0.60_0.16_25)] transition-colors duration-200 underline underline-offset-2 decoration-[oklch(0.30_0.02_280)]"
+            >
+              特定商取引法に基づく表記
+            </Link>
+            <p className="text-xs text-[oklch(0.35_0.02_240)]">
+              &copy; 2025 HPミセガオ. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

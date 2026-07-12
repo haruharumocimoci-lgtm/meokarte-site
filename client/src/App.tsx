@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Cancel from "./pages/Cancel";
 import Home from "./pages/Home";
 import Success from "./pages/Success";
+import Tokushoho from "./pages/Tokushoho";
 
 function Router() {
   // GitHub Pages serves the site under a subpath (e.g. /meokarte-site/),
@@ -18,6 +19,7 @@ function Router() {
         <Route path={"/"} component={Home} />
         <Route path={"/success"} component={Success} />
         <Route path={"/cancel"} component={Cancel} />
+        <Route path={"/tokushoho"} component={Tokushoho} />
         <Route path={"/404"} component={NotFound} />
         <Route component={NotFound} />
       </Switch>
