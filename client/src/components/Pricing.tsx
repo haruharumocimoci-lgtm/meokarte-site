@@ -45,7 +45,7 @@ export default function Pricing() {
         "Google投稿作成",
         "口コミ返信の提案",
       ],
-      cta: "相談してみる",
+      cta: "購入へ",
       ctaHref: paymentLinks.meo || "#contact",
       featured: false,
     },
@@ -62,7 +62,7 @@ export default function Pricing() {
         "月々の追加費用なし（HP維持費に込み）",
         "※食品の販売は営業許可の確認が必要",
       ],
-      cta: "相談してみる",
+      cta: "購入へ",
       ctaHref: paymentLinks.ec || "#contact",
       featured: false,
     },
@@ -197,7 +197,7 @@ export default function Pricing() {
               href={paymentLinks.domain || "#contact"}
               className="block text-center py-3 px-8 rounded-sm font-medium text-sm transition-all duration-200 border border-[oklch(0.18_0.02_280/0.2)] text-sumi hover:bg-[oklch(0.18_0.02_280)] hover:text-white hover:border-[oklch(0.18_0.02_280)] active:scale-[0.97]"
             >
-              相談してみる
+              購入へ
             </a>
           </div>
         </div>
