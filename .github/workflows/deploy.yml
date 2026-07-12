@@ -26,6 +26,13 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec vite build
+        env:
+          VITE_STRIPE_LINK_BASIC: ${{ vars.VITE_STRIPE_LINK_BASIC }}
+          VITE_STRIPE_LINK_MEO: ${{ vars.VITE_STRIPE_LINK_MEO }}
+          VITE_STRIPE_LINK_EC: ${{ vars.VITE_STRIPE_LINK_EC }}
+          VITE_STRIPE_LINK_DOMAIN: ${{ vars.VITE_STRIPE_LINK_DOMAIN }}
+      # SPAフォールバック: /success・/cancel への直アクセスでもアプリを配信する
+      - run: cp dist/public/index.html dist/public/404.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

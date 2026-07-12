@@ -1,6 +1,14 @@
 import { useInView } from "@/hooks/useInView";
 import { Check } from "lucide-react";
 
+// Stripe Payment Link(未設定の間は #contact にフォールバック)
+const paymentLinks = {
+  basic: import.meta.env.VITE_STRIPE_LINK_BASIC as string | undefined,
+  meo: import.meta.env.VITE_STRIPE_LINK_MEO as string | undefined,
+  ec: import.meta.env.VITE_STRIPE_LINK_EC as string | undefined,
+  domain: import.meta.env.VITE_STRIPE_LINK_DOMAIN as string | undefined,
+};
+
 export default function Pricing() {
   const { ref, isInView } = useInView(0.1);
 
@@ -21,7 +29,7 @@ export default function Pricing() {
         "いつでも解約OK・違約金なし",
       ],
       cta: "無料でHPをつくる",
-      ctaHref: "#contact",
+      ctaHref: paymentLinks.basic || "#contact",
       featured: true,
     },
     {
@@ -38,7 +46,7 @@ export default function Pricing() {
         "口コミ返信の提案",
       ],
       cta: "相談してみる",
-      ctaHref: "#contact",
+      ctaHref: paymentLinks.meo || "#contact",
       featured: false,
     },
     {
@@ -55,7 +63,7 @@ export default function Pricing() {
         "※食品の販売は営業許可の確認が必要",
       ],
       cta: "相談してみる",
-      ctaHref: "#contact",
+      ctaHref: paymentLinks.ec || "#contact",
       featured: false,
     },
   ];
@@ -186,7 +194,7 @@ export default function Pricing() {
               1年目のドメイン代込み・2年目以降 年¥3,500（税込）
             </p>
             <a
-              href="#contact"
+              href={paymentLinks.domain || "#contact"}
               className="block text-center py-3 px-8 rounded-sm font-medium text-sm transition-all duration-200 border border-[oklch(0.18_0.02_280/0.2)] text-sumi hover:bg-[oklch(0.18_0.02_280)] hover:text-white hover:border-[oklch(0.18_0.02_280)] active:scale-[0.97]"
             >
               相談してみる

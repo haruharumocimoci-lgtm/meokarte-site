@@ -4,7 +4,9 @@ import NotFound from "@/pages/NotFound";
 import { Route, Router as WouterRouter, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import Cancel from "./pages/Cancel";
 import Home from "./pages/Home";
+import Success from "./pages/Success";
 
 function Router() {
   // GitHub Pages serves the site under a subpath (e.g. /meokarte-site/),
@@ -14,6 +16,8 @@ function Router() {
     <WouterRouter base={base}>
       <Switch>
         <Route path={"/"} component={Home} />
+        <Route path={"/success"} component={Success} />
+        <Route path={"/cancel"} component={Cancel} />
         <Route path={"/404"} component={NotFound} />
         <Route component={NotFound} />
       </Switch>
