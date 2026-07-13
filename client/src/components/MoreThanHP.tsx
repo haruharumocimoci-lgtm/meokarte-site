@@ -1,6 +1,6 @@
 import sumiStroke from "@/assets/sumi-stroke_25bd9a2f.png";
 import { useInView } from "@/hooks/useInView";
-import { TrendingUp, ShoppingBag } from "lucide-react";
+import { TrendingUp, ShoppingBag, Globe } from "lucide-react";
 
 export default function MoreThanHP() {
   const { ref, isInView } = useInView(0.1);
@@ -31,13 +31,13 @@ export default function MoreThanHP() {
           </div>
           <div className="lg:col-span-4 lg:col-start-9 flex items-end pb-2">
             <p className="text-[oklch(0.62_0.02_240)] text-base lg:text-lg leading-relaxed border-l-2 border-[oklch(0.50_0.18_25/0.4)] pl-5">
-              ご希望の方には、2つのオプションをご用意しています。いずれもGoogleマップの実データ分析に基づく、正攻法の集客改善です。
+              ご希望の方には、3つのオプションをご用意しています。ホームページ公開後、必要になったタイミングで追加できます。
             </p>
           </div>
         </div>
 
-        {/* Two options - staggered layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6">
+        {/* Three options - staggered layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6">
           {/* Option 1 - 集客プラン */}
           <div
             className={`ink-card rounded-sm p-8 lg:p-10 hover:border-[oklch(0.50_0.18_25/0.35)] transition-all duration-300 group overflow-hidden ${
@@ -81,13 +81,34 @@ export default function MoreThanHP() {
               お土産・お持ち帰りセット・お食事券などをホームページ上で販売できる通販ページを追加。決済はStripe（カード等）に対応し、月々の追加費用はかかりません。※食品の販売には所定の営業許可が必要です。
             </p>
           </div>
+
+          {/* Option 3 - 独自ドメイン */}
+          <div
+            className={`ink-card rounded-sm p-8 lg:p-10 hover:border-[oklch(0.50_0.18_25/0.35)] transition-all duration-300 group overflow-hidden lg:mt-16 ${
+              isInView ? "animate-fade-in-up" : "opacity-0"
+            }`}
+            style={{ animationDelay: "360ms" }}
+          >
+            <div className="flex items-center gap-3 mb-6 relative z-10">
+              <Globe className="w-5 h-5 text-[oklch(0.60_0.16_25)]" strokeWidth={1.5} />
+              <div className="hanko-badge">
+                初期5,000円（税込）
+              </div>
+            </div>
+            <h3 className="font-display font-bold text-2xl text-white mb-5 relative z-10">
+              独自ドメイン
+            </h3>
+            <p className="text-sm text-[oklch(0.62_0.02_240)] leading-[1.8] relative z-10">
+              「yourshop.com」のような、お店だけのドメインで公開します。名刺やチラシにも載せやすく、お店の信頼感が増します。初期費用に1年目のドメイン代を含み、2年目以降は年3,500円（税込）です。
+            </p>
+          </div>
         </div>
 
         {/* Note */}
         <div className="mt-12 flex items-start gap-4 max-w-2xl">
           <div className="hanko-badge shrink-0 mt-0.5">注</div>
           <p className="text-sm text-[oklch(0.50_0.02_240)] leading-relaxed">
-            どちらもご希望の方だけのオプションです。ご不要な方に無理におすすめすることはありません。
+            いずれもご希望の方だけのオプションです。ご不要な方に無理におすすめすることはありません。
           </p>
         </div>
       </div>
