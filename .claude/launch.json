@@ -6,6 +6,26 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["-y", "pnpm@10.4.1", "run", "dev"],
       "port": 3000
+    },
+    {
+      "name": "restaurant-template-dev",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": [
+        "-NoProfile",
+        "-Command",
+        "Set-Location -LiteralPath 'C:\\Users\\qmoch\\OneDrive\\デスクトップ\\restaurant-template'; npx -y pnpm@10.4.1 run dev"
+      ],
+      "port": 3100
+    },
+    {
+      "name": "restaurant-template-dist",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": [
+        "-NoProfile",
+        "-Command",
+        "Set-Location -LiteralPath 'C:\\Users\\qmoch\\OneDrive\\デスクトップ\\restaurant-template'; npx -y http-server dist -p 3120 -c-1"
+      ],
+      "port": 3120
     }
   ]
 }
