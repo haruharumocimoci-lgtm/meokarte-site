@@ -191,7 +191,7 @@ export default function Pricing() {
               <span className="text-sm text-[oklch(0.50_0.03_240)] ml-1">（初期・税込）</span>
             </div>
             <p className="text-xs text-[oklch(0.50_0.03_240)] mt-1.5 mb-5">
-              年¥5,000（税込）
+              ¥5,000/年（税込み）
             </p>
             <a
               href={paymentLinks.domain || "#contact"}
