@@ -191,7 +191,7 @@ export default function Pricing() {
               <span className="text-sm text-[oklch(0.50_0.03_240)] ml-1">（初期・税込）</span>
             </div>
             <p className="text-xs text-[oklch(0.50_0.03_240)] mt-1.5 mb-5">
-              1年目のドメイン代込み・2年目以降 年¥3,500（税込）
+              年¥5,000（税込）
             </p>
             <a
               href={paymentLinks.domain || "#contact"}
