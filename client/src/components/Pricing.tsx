@@ -184,15 +184,12 @@ export default function Pricing() {
           </div>
 
           <div className="shrink-0 sm:text-right relative z-10">
-            <div>
+            <div className="mb-5">
               <span className="font-display font-bold text-2xl lg:text-[1.75rem] text-sumi">
                 ¥5,000
               </span>
-              <span className="text-sm text-[oklch(0.50_0.03_240)] ml-1">（初期・税込）</span>
+              <span className="text-sm text-[oklch(0.50_0.03_240)] ml-1">/年（税込み）</span>
             </div>
-            <p className="text-xs text-[oklch(0.50_0.03_240)] mt-1.5 mb-5">
-              ¥5,000/年（税込み）
-            </p>
             <a
               href={paymentLinks.domain || "#contact"}
               className="block text-center py-3 px-8 rounded-sm font-medium text-sm transition-all duration-200 border border-[oklch(0.18_0.02_280/0.2)] text-sumi hover:bg-[oklch(0.18_0.02_280)] hover:text-white hover:border-[oklch(0.18_0.02_280)] active:scale-[0.97]"
