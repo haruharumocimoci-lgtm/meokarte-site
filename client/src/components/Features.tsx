@@ -11,7 +11,7 @@ export default function Features() {
     {
       value: "¥5,000",
       suffix: "/月",
-      label: "維持費（税込）・変更 月4回まで",
+      label: "維持費（税込）・変更 月2回まで",
     },
     {
       value: "縛りなし",

@@ -25,7 +25,7 @@ export default function Pricing() {
         "地図・電話・口コミ投稿への導線設計",
         "サーバー・公開費用込み",
         "お店専用URL（例：yourshop.misegao.com）",
-        "内容の変更・更新 月4回まで",
+        "内容の変更・更新 月2回まで",
         "いつでも解約OK・違約金なし",
       ],
       cta: "無料でHPをつくる",
