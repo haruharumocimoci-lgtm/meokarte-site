@@ -92,14 +92,14 @@ export default function MoreThanHP() {
             <div className="flex items-center gap-3 mb-6 relative z-10">
               <Globe className="w-5 h-5 text-[oklch(0.60_0.16_25)]" strokeWidth={1.5} />
               <div className="hanko-badge">
-                初期5,000円（税込）
+                年5,000円（税込）
               </div>
             </div>
             <h3 className="font-display font-bold text-2xl text-white mb-5 relative z-10">
               独自ドメイン
             </h3>
             <p className="text-sm text-[oklch(0.62_0.02_240)] leading-[1.8] relative z-10">
-              「yourshop.com」のような、お店だけのドメインで公開します。名刺やチラシにも載せやすく、お店の信頼感が増します。初期費用に1年目のドメイン代を含み、2年目以降は年3,500円（税込）です。
+              「yourshop.com」のような、お店だけのドメインで公開します。名刺やチラシにも載せやすく、お店の信頼感が増します。年額にドメイン代を含み、2年目以降も年5,000円（税込）です。
             </p>
           </div>
         </div>
