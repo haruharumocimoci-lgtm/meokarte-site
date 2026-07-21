@@ -29,6 +29,24 @@ export default function Header() {
           : "bg-transparent"
       }`}
     >
+      {/* Campaign announcement bar */}
+      <a
+        href="#contact"
+        className="block bg-[oklch(0.50_0.18_25)] text-white hover:bg-[oklch(0.45_0.20_25)] transition-colors duration-200"
+      >
+        <div className="container flex flex-wrap items-center justify-center gap-x-3 gap-y-0.5 py-2 text-center">
+          <span className="inline-flex items-center gap-1.5 text-[0.65rem] lg:text-xs font-bold tracking-[0.12em] border border-white/50 rounded-[2px] px-2 py-0.5">
+            先着10名
+          </span>
+          <span className="text-xs lg:text-sm font-medium">
+            ホームページ制作費0円＋月額3ヶ月無料キャンペーン実施中
+          </span>
+          <span className="hidden sm:inline text-[0.65rem] lg:text-xs text-white/75">
+            ※先着10名に達し次第終了
+          </span>
+        </div>
+      </a>
+
       <div className="container flex items-center justify-between h-16 lg:h-20">
         {/* Logo */}
         <a href="#top" className="flex items-center gap-2.5 group">
