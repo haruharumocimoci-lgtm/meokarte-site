@@ -20,6 +20,7 @@ export default function Pricing() {
       priceSuffix: "／月（税込）",
       description: "お店のホームページをこれから持つ方に",
       features: [
+        "【先着10名】月額3ヶ月無料",
         "ホームページ制作費 0円",
         "スマホ特化デザイン",
         "地図・電話・口コミ投稿への導線設計",
@@ -89,6 +90,7 @@ export default function Pricing() {
 
           {/* Summary badges */}
           <div className="flex flex-wrap gap-3 mt-8">
+            <span className="hanko-badge">先着10名 月額3ヶ月無料</span>
             <span className="hanko-badge">制作費 0円</span>
             <span className="hanko-badge">月額 5,000円（税込）</span>
             <span className="hanko-badge">契約期間の縛り なし</span>
@@ -203,6 +205,7 @@ export default function Pricing() {
         <div className="mt-12 flex items-start gap-4 max-w-3xl">
           <div className="hanko-badge shrink-0 mt-0.5">注</div>
           <p className="text-sm text-[oklch(0.50_0.03_240)] leading-relaxed">
+            先着10名キャンペーンは、基本プランの月額5,000円（税込）が最初の3ヶ月間無料になるものです。先着10名に達し次第終了します。4ヶ月目以降は通常どおり月額5,000円（税込）で、無料期間中の解約も可能です。
             契約期間の縛り・違約金はありません。月単位でいつでも解約できます。通販の売上には別途Stripeの決済手数料がかかります。大きな作り替えなど特別なご依頼は、必ず事前にお見積りしてから進めます。
           </p>
         </div>
